@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog des Développeurs</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Lien vers votre fichier CSS -->
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur le Blog des Développeurs</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="inscription.html">S'inscrire</a></li>
+        <li><a href="connexion.html">Se connecter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Articles récents</h2>
+    <ul>
+      <li>
+        <a href="article.html?id=1">
+          <h3>Article 1 - Titre de l'article</h3>
+        </a>
+        <p>Un résumé rapide de l'article...</p>
+        <p><em>Par Auteur</em></p>
+      </li>
+      <li>
+        <a href="article.html?id=2">
+          <h3>Article 2 - Titre de l'article</h3>
+        </a>
+        <p>Un résumé rapide de l'article...</p>
+        <p><em>Par Auteur</em></p>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Blog des Développeurs</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article 1 - Titre de l'article</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Article 1 - Titre de l'article</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Retour à l'accueil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <p><strong>Par Auteur | 12 janvier 2024</strong></p>
+      <p>Voici le contenu complet de l'article. Il peut inclure des paragraphes, des images, des vidéos, etc. Vous pouvez afficher du texte dynamique en utilisant PHP et des bases de données.</p>
+    </article>
+
+    <section>
+      <h3>Commentaires</h3>
+      <ul>
+        <li>
+          <p><strong>Utilisateur 1 :</strong></p>
+          <p>Très bon article ! J'ai beaucoup appris.</p>
+        </li>
+        <li>
+          <p><strong>Utilisateur 2 :</strong></p>
+          <p>Merci pour ces explications claires.</p>
+        </li>
+      </ul>
+
+      <h3>Ajouter un commentaire</h3>
+      <form method="POST">
+        <textarea name="commentaire" required placeholder="Votre commentaire..."></textarea><br>
+        <button type="submit">Commenter</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Blog des Développeurs</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S'inscrire</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Inscription</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Retour à l'accueil</a></li>
+        <li><a href="connexion.html">Se connecter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form method="POST" action="inscription.php">
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="mot_de_passe">Mot de passe :</label>
+      <input type="password" id="mot_de_passe" name="mot_de_passe" required><br>
+
+      <button type="submit">S'inscrire</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Blog des Développeurs</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Se connecter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Connexion</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Retour à l'accueil</a></li>
+        <li><a href="inscription.html">S'inscrire</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form method="POST" action="connexion.php">
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="mot_de_passe">Mot de passe :</label>
+      <input type="password" id="mot_de_passe" name="mot_de_passe" required><br>
+
+      <button type="submit">Se connecter</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Blog des Développeurs</p>
+  </footer>
+</body>
+</html>
